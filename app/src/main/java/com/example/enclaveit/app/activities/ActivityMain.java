@@ -5,13 +5,9 @@ import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.widget.TextView;
 
 import com.example.enclaveit.app.R;
-import com.example.enclaveit.app.config.Config;
-import com.google.firebase.iid.FirebaseInstanceId;
-import com.google.firebase.messaging.FirebaseMessaging;
 
 public class ActivityMain extends AppCompatActivity {
 
@@ -25,19 +21,7 @@ public class ActivityMain extends AppCompatActivity {
 
         txtRegId = (TextView) findViewById(R.id.txt_reg_id);
 
-        FirebaseMessaging.getInstance().subscribeToTopic(Config.TOPIC_GLOBAL);
-        String refreshedToken = FirebaseInstanceId.getInstance().getToken();
-        Log.d(TAG, "onTokenRefresh: " + refreshedToken);
-
-        storeRegIdInPref(refreshedToken);
         displayFirebaseRegId();
-    }
-
-    private void storeRegIdInPref(String token) {
-        SharedPreferences pref = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
-        SharedPreferences.Editor editor = pref.edit();
-        editor.putString(getString(R.string.FCM_TOKEN), token);
-        editor.commit();
     }
 
     private void displayFirebaseRegId() {

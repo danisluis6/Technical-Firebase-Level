@@ -52,7 +52,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="1a7a5d037013ebcfb717375f1046438ab8f82d94">
+        sha1="af4fd922ca0218d11901c473bcfffd01447bf2ad">
         <dex dex="/home/enclaveit/Documents/SchoolMate/Technical-Android-Notification/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2ea90f86f100d50d1681fb94a8b7590a7973c4ca/classes.dex" />
     </item>
     <item
@@ -70,7 +70,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.1"
-        sha1="72f3d0300b42caf6c11d054bd3c0f65993aaa719">
+        sha1="5efb158b1a3a446f5b69716ce92e45e9d22d8591">
         <dex dex="/home/enclaveit/Documents/SchoolMate/Technical-Android-Notification/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_3b94306c9348af36f2c21cd7cf373589f8844157/classes.dex" />
     </item>
     <item

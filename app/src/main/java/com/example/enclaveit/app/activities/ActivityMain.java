@@ -16,7 +16,6 @@ import android.widget.Toast;
 import com.example.enclaveit.app.R;
 import com.example.enclaveit.app.config.Config;
 import com.example.enclaveit.app.utils.NotificationUtils;
-import com.google.firebase.messaging.FirebaseMessaging;
 
 public class ActivityMain extends AppCompatActivity {
 
@@ -54,10 +53,11 @@ public class ActivityMain extends AppCompatActivity {
     private void displayFirebaseRegId() {
         SharedPreferences pref = getApplicationContext().getSharedPreferences(getString(R.string.FCM_PREF), Context.MODE_PRIVATE);
         String regId = pref.getString(getString(R.string.FCM_TOKEN), null);
-        if (!TextUtils.isEmpty(regId))
+        if (!TextUtils.isEmpty(regId)) {
             txtRegId.setText("Firebase Reg Id: " + regId);
-        else
+        }else {
             txtRegId.setText("Firebase Reg Id is not received yet!");
+        }
     }
 
     @Override

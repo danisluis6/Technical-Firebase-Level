@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">App</string>
+    <string name="FCM_PREF">com.example.enclaveit.app.fcm_pref</string>
+    <string name="FCM_TOKEN">com.example.enclaveit.app.fcm_token</string>
+</resources>
